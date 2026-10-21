@@ -1,0 +1,35 @@
+Fase 1: DIMENSIONAMIENTO (DIAS 1-2)
+Responde con justificación de 2–3 líneas por pregunta. No copies de internet: usa tus palabras.
+
+1. Con 500 visitas/día y 5 peticiones por visita, ¿cuál es el promedio de peticiones/segundo? Aplica
+un factor pico de 15 y calcula el pico real.
+	Al tener 500 visitar por dia, y sumandole 5 peticiones por visita, es un total de 2500 visitas al día.
+	Al dia son 86,400 segundos y si lo dividiendo las peticiones al dia con los segundo da un total de 
+	0.0289 peticiones por segundo.
+	Teniendo en cuenta que hay un factor de 15, multiplicando con las peticiones por segundo:
+			0.0289 * 15 = 0.4335 peticiones por segudo. 
+	
+2. ¿Los 2 vCPU y 4 GB de RAM alcanzan para el tráfico diario? ¿Y para el pico de 3,000 visitas?
+Justifica.
+	Si la capacidad habitual es de 500 visitas por día, la infraestructura es mas que suficiente para el trafico
+	que va a caer. y tambien nodejs y apache consumen muy pocos recursos entonces, no va a saturar los recursos.
+
+
+3. Si el sitio empieza a responder lento, ¿qué recurso revisarías primero: CPU, RAM, disco o red?
+Explica por qué.
+	Yo primero revisaaria la red, viviendo en un pais donde el internet es muy inestable sería lo primero,
+	al revisar que esta bien me iría directamente a la RAM, ya que aqui se puede saaturar el almacenamiento
+	y hacer lento y aumentar los tiempos de cada respuesta o peticion. 
+
+4. Decisión personal: para un negocio como “Dulce Hogar”, ¿recomiendas nube o servidor local?
+Menciona 3 criterios (costo, escalabilidad, mantenimiento).
+	Recomiendo en la nube, 
+	Por que permite aumentar los recursos cuando sea necesario, de igual forma que podemos ahorrarnos o tener
+	inconvenientes con la energía electrica a que se vaya y se quede sin funcionar y por ultimo, no es mas
+	economico pero es mejor pagar un servicio en la nube a que estar pendiente 24/7 de una maquina. 
+
+5. Reto: si el sitio fuera solo HTML/CSS estático (sin Express), ¿bajaría la necesidad de CPU?
+Explica por qué.
+	Si bajaría ya que va a disminuir la necesidad de recursos de CPU, apache resolveria con el procesamiento de
+	los archivos.
+
