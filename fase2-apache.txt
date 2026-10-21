@@ -1,0 +1,9 @@
+FASE 2 - Apache + Virtual Host ( Dias 3-6)
+Preguntas:
+1. ¿Qué diferencia hay entre sites-available y sites-enabled?
+	la diferencia es que sites-available contiene todas las configuraciones de los sitios creados y sites-enabled
+	solo es un encace con sites-available de los sitios que estan activos en Apache.
+
+2. ¿Por qué se ejecuta configtest antes de reload?
+	Para saber que si todos los archivos estan correctos y que no hay errores.
+
