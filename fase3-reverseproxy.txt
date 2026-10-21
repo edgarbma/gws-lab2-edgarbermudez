@@ -1,0 +1,14 @@
+FASE 3: Reverse Proxy a Express (Dias 7-10)
+
+Preguntas:
+1. ¿Qué hace exactamente ProxyPass /api http://IP_HOST:9090/api?
+	Esto l que hace es que Apache actue como Proxy Inverso. Es decir que cuando ingresa unsa solicitud apache
+	lo envia al servidor donde esta el peurto en la maquina donde esta el host.
+
+2. ¿Por qué localhost desde WSL2 no llega al Express en Windows?
+	Esto se da pro que se necesita una puerta de enlace es decir se necesita de una ip que pueda conectar ambos
+	sistemas.
+
+3. Reto: ¿qué pasaría si escribes ProxyPass /api http://IP_HOST:9090 (sin /api final)? Pruébalo.
+	Cambie el puerto a 9095, debido a problema interno en la laptop, pero si se omite la api, provocara un error 
+	que n o se puede obtener /saludo  o /pedido
