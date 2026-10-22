@@ -1,0 +1,16 @@
+FASE 4: HTTPS con mkcert + permisos + logs (Dias 11-15)
+Preguntas:
+1. ¿Por qué certbot no funciona para dulcehogar.local?
+	Cerbot utiliza una certificacio publica Let's Encrypt si no mal recuerdo, la cual usa servidores
+	globales publicos y dulcehogar.local es privado ya que esta hecha para uso academico o personal
+	por ende no se puede verificar ni comunicarse con el servidor a travez de internet.
+
+2. ¿Qué diferencia hay entre certificado autofirmado y uno firmado por mkcert?
+	EL certificado no da los permisos necesarios para que que funcione por ende da errores de seguridad
+	mientras que mkcert crea e isntala un certificado firmado en el sistema de esta forma se evitan 
+	los errores y/o advertencias. 
+
+3. ¿Por qué chmod 777 sería una mala práctica en este sitio?
+	Por que da permisos de lectura y escritura a todos los documentos por ende los vuelve vulnerables
+	y un atacante podría facilmente roper o modificar el programa.
+
